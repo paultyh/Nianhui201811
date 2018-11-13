@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <meta name="viewport" content="width=750, user-scalable=no">
+    <title>能量大奖 越无限</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .shouye{
+            position: relative;
+        }
+
+        .shouye_wrap:first-child{
+            position: absolute;
+            top: 1057px;
+            left: 95px;
+        }
+        #myTeam{
+            position: absolute;
+            top: 1057px;
+            left: 95px;
+        }
+
+        #rank{
+            position: absolute;
+            top: 1057px;
+            left: 435px;
+        }
+
+        #returnTo{
+            position: absolute;
+            top: 1214px;
+            left: 0;
+        }
+    </style>
+</head>
+<script type="text/javascript" src="http://cloud.yofoto.cn/Themes/jquery-1.8.3.min.js"></script>
+<body>
+    <script>
+        $(function () {
+            $('#myTeam').on('click', function () {
+                alert('你点啥呢');
+            })
+            $('#rank').on('click', function () {
+                alert('再点一个试试');
+            })
+        })
+    </script>
+    <div class="shouye">
+        <img src="http://cloud.yofoto.cn/Themes/Activity/Nianhui201811/img/shouye/bg_index.png">
+        <div class="shouye_wrap">
+            <img src="" alt="">
+            <img src="http://cloud.yofoto.cn/Themes/Activity/Nianhui201811/img/shouye/myTeam.png" id="myTeam">
+            <img src="http://cloud.yofoto.cn/Themes/Activity/Nianhui201811/img/shouye/rank.png" id="rank">
+            <img src="http://cloud.yofoto.cn/Themes/Activity/Nianhui201811/img/shouye/returnTo.png" id="returnTo">
+        </div>
+    </div>
+</body>
+</html>
