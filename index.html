@@ -1,62 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-   <meta name="viewport" content="width=750, user-scalable=no">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=750, user-scalable=no" />
     <title>能量大奖 越无限</title>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        .shouye{
-            position: relative;
-        }
+        * {
+        margin: 0;
+        padding: 0;
+      }
+      .shouye {
+        position: relative;
+      }
 
-        .shouye_wrap:first-child{
-            position: absolute;
-            top: 1057px;
-            left: 95px;
-        }
-        #myTeam{
-            position: absolute;
-            top: 1057px;
-            left: 95px;
-        }
+      .shouye_wrap:first-child {
+        position: absolute;
+        top: 1057px;
+        left: 95px;
+      }
+      #myTeam {
+        position: absolute;
+        top: 1057px;
+        left: 95px;
+      }
 
-        #rank{
-            position: absolute;
-            top: 1057px;
-            left: 435px;
-        }
+      #rank {
+        position: absolute;
+        top: 1057px;
+        left: 435px;
+      }
 
-        #returnTo{
-            position: absolute;
-            top: 1214px;
-            left: 0;
-        }
+      #returnTo {
+        position: absolute;
+        top: 1214px;
+        left: 0;
+      }
+      #rule {
+        position: absolute;
+        left: 692px;
+        top: 77px;
+      }
+      .myTeam{
+        position:relative;
+      }
+      .item_block img{
+        position:absolute;
+      }
+      .item_block img:first-child{
+        left:50px;
+        top:50px;
+      }
+
+      .item_block img:nth-child(2){
+        left:639px;
+        top:50px;
+      }
+      #kuang{
+        margin:0 auto;
+        left:16px;
+        top:625px;
+      }
+      #touxiang{
+        left:315px;
+        top:899px;
+      }
+
+      #createTeam{
+        left:146px;
+        top:1162px;
+      }
     </style>
 </head>
 <script type="text/javascript" src="http://cloud.yofoto.cn/Themes/jquery-1.8.3.min.js"></script>
+
 <body>
     <script>
-        $(function () {
-            $('#myTeam').on('click', function () {
-                alert('你点啥呢');
-            })
-            $('#rank').on('click', function () {
-                alert('再点一个试试');
-            })
-        })
+        $(function ($) {
+            $("#rule").on("click", function () {
+                alert("aa");
+            });  
+            $('.myTeam').click(function () {
+              
+            });
+
+
+        });
     </script>
+
     <div class="shouye">
-        <img src="http://cloud.yofoto.cn/Themes/Activity/Nianhui201811/img/shouye/bg_index.png">
+        <img src="./img/shouye/bg_index.png" />
         <div class="shouye_wrap">
-            <img src="" alt="">
-            <img src="http://cloud.yofoto.cn/Themes/Activity/Nianhui201811/img/shouye/myTeam.png" id="myTeam">
-            <img src="http://cloud.yofoto.cn/Themes/Activity/Nianhui201811/img/shouye/rank.png" id="rank">
-            <img src="http://cloud.yofoto.cn/Themes/Activity/Nianhui201811/img/shouye/returnTo.png" id="returnTo">
+            <img src="./img/shouye/rule.png" id="rule" />
+            <img src="./img/shouye/myTeam.png" id="myTeam" />
+            <img src="./img/shouye/rank.png" id="rank" />
+            <img src="./img/shouye/returnTo.png" id="returnTo" />
         </div>
     </div>
+    
+      <!-- 我的战队  进去后同时创建战队
+      昵称暂时用img显示 -->
+    
+    <div class="myTeam">
+        <img src="img/myTeam/myTeambg.png">
+        <div class="item_block" >
+            <img src="img/myTeam/back_arrow.png" id="back_arrow" >
+            <img src="img/myTeam/wenhao.png" id="wenhao" >
+            <div class="kuang">
+                <img src="img/myTeam/kuang.png" id="kuang">
+                <img src="img/myTeam/touxiang.png" id="touxiang">
+                <img src="img/myTeam/text_nc.png" id="text_nc.png" style="left:287px;top:1033px;">
+                <img src="img/myTeam/nojoin.png" style="left:271px;top:1103px;">
+                <img src="img/myTeam/create_team.png" id="createTeam">
+            </div>
+        </div>
+    </div>
+
+    <!-- 
+        点击创建战队按钮之后的展示页面
+     -->
+     <div class="createTeam">
+        <img src="" >
+     </div>
+
 </body>
+
+
 </html>
